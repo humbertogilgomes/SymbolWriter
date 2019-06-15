@@ -6,4 +6,8 @@ Compiling this program is easy. Aldo there isn't a Visual Studio / Mono Develop 
 
 `csc SymbolWriter.cs`
 
-This program also uses the MIT license, which makes it easy to use my code under the condition that you include the license file. 
+This program also uses the MIT license, which makes it easy to use my code under the condition that you include the license file.
+
+# Notes
+
+- This program will always generate the fastest way to write a word, using the least atomic symbols possible, always preferring the 2 character symbols (Eg.: Fe (Iron)) to the 1 character ones (Eg.: C (Carbon)). The word "cute", for example, can be written as CuTe (Copper, Tellurium) or CUTe (Carbon, Uranium and Tellurium) but this program will always prefer CuTe, the shortest way, using less elements.

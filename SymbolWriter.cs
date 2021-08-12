@@ -34,7 +34,6 @@ namespace Writer
         /// <summary>
         /// Returns the possible outcome of 2 characters
         /// </summary>
-        /// <returns>The possible.</returns>
         Tuple<int, int> GetPossible(char c1, char c2)
         {
             //Get the characters to the periodic table standard (Upper and lower case. Eg.: Hg)
@@ -48,7 +47,7 @@ namespace Writer
         }
 
         /// <summary>
-        /// Gets a part of a string between 2 character indexes
+        /// Gets a part of a string between 2 character indices
         /// </summary>
         string GetPart(string str, int start, int end)
         {
